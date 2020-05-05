@@ -1,6 +1,6 @@
-docker build -t ovist/section14-client:latest -t ovist/section14-client:$SHA -f ./client/Docker ./client
-docker build -t ovist/section14-server:latest -t ovist/section14-server:$SHA -f ./server/Docker ./server
-docker build -t ovist/section14-worker:latest -t ovist/section14-worker:$SHA -f ./worker/Docker ./worker
+docker build -t ovist/section14-client:latest -t ovist/section14-client:$SHA -f ./client/Dockerfile ./client
+docker build -t ovist/section14-server:latest -t ovist/section14-server:$SHA -f ./server/Dockerfile ./server
+docker build -t ovist/section14-worker:latest -t ovist/section14-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push ovist/section14-client:latest
 docker push ovist/section14-server:latest
 docker push ovist/section14-worker:latest

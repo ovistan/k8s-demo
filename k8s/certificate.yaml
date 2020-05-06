@@ -11,10 +11,10 @@ spec:
   dnsNames:
     - mussaik.com
     - www.mussaik.com
-  acme:
-    config:
-      - http01:
-          ingressClass: nginx
-        domains:
-          - mussaik.com
-          - www.mussaik.com
+  # acme:
+  #   config:
+  #     - http01:
+  #         ingressClass: nginx
+  #       domains:
+  #         - mussaik.com
+  #         - www.mussaik.com

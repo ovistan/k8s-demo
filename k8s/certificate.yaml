@@ -1,0 +1,20 @@
+apiVersion: certmanager.k8s.io/v1alpha2
+kind: Certificate
+metadata:
+  name: mussaik-com-tls
+spec:
+  secretName: mussaik-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: mussaik.com
+  dnsNames:
+    - mussaik.com
+    - www.mussaik.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - mussaik.com
+          - www.mussaik.com
